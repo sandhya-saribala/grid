@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.parent{
+    background-color:red ;
+    display:grid;
+    grid-template-columns: repeat(6,100px);
+    grid-auto-rows: auto;
+    grid-template-areas:
+                         "nav-bar nav-bar  nav-bar  nav-bar nav-bar nav-bar"
+                         "aside some1 some2 header article article"
+                         "aside some3 some3  header some4 some5"
+                         "footer footer footer footer footer footer"
+    ;
+}  
+.child1{
+    background-color: blue; 
+    grid-area: nav-bar;
+}
+.child2{
+    background-color: green; 
+    grid-area: aside;
+}
+.child3{
+    background-color:yellow; 
+    grid-area: some1;
+}
+.child4{
+    background-color: yellowgreen; 
+    grid-area: some2;
+}
+.child5{
+    background-color: violet; 
+    grid-area: header;
+}
+.child6{
+    background-color: indigo; 
+    grid-area: article;
+}
+.child7{
+    background-color: indianred; 
+    grid-area: some3;
+}
+.child8{
+    background-color: pink; 
+    grid-area: some4;
+}
+.child9{
+    background-color:powderblue; 
+    grid-area: some5;
+}
+.child10{
+    background-color: orangered; 
+    grid-area: footer;
+}
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">nav-bar</div>
+        <div class="child child2">aside</div>
+        <div class="child child3">some1</div>
+        <div class="child child4">some2</div>
+        <div class="child child5">header</div>
+        <div class="child child6">article</div>
+        <div class="child child7">some3</div>
+        <div class="child child8">some4</div>
+        <div class="child child9">some5</div>
+        <div class="child child10">footer</div>
+    </div>
+</body>
+</html>
